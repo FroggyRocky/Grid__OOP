@@ -26,14 +26,16 @@ const dataExample = [
     }
 ];
 
-
+for (value of dataExample) {
+    console.log(value);
+}
 const data = {
     header: "Hello",
     headerClass: ["header", "colorHeader"],
     renderPlace: ".table-container",
     tableClass: ["table"],
     tableData: dataExample,
-    attribute:  {
+    attribute: {
         'company': {
             'label': 'Компания',
             'src': 'html',
@@ -52,9 +54,6 @@ const data = {
         }
     }
 }
-
-
-
 
 const grid1 = new Grid();
 grid1.render(data)
